@@ -1,0 +1,203 @@
+$date
+	Tue Aug 19 22:27:57 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_link_top $end
+$var wire 1 ! done $end
+$var reg 1 " clk $end
+$var reg 1 # rst $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # rst $end
+$var wire 1 $ req $end
+$var wire 8 % last_byte [7:0] $end
+$var wire 1 ! done $end
+$var wire 8 & data [7:0] $end
+$var wire 1 ' ack $end
+$scope module u_master $end
+$var wire 1 " clk $end
+$var wire 8 ( data [7:0] $end
+$var wire 1 ! done $end
+$var wire 1 $ req $end
+$var wire 1 # rst $end
+$var wire 1 ' ack $end
+$var parameter 3 ) DONE_STATE $end
+$var parameter 3 * IDLE $end
+$var parameter 3 + REQ $end
+$var parameter 3 , WAIT_ACK $end
+$var parameter 3 - WAIT_ACK_DROP $end
+$var reg 2 . byte_index [1:0] $end
+$var reg 3 / current_state [2:0] $end
+$var reg 8 0 data_reg [7:0] $end
+$var reg 1 1 done_reg $end
+$var reg 3 2 next_state [2:0] $end
+$var reg 1 3 req_reg $end
+$upscope $end
+$scope module u_slave $end
+$var wire 1 ' ack $end
+$var wire 1 " clk $end
+$var wire 8 4 data_in [7:0] $end
+$var wire 8 5 last_byte [7:0] $end
+$var wire 1 $ req $end
+$var wire 1 # rst $end
+$var parameter 2 6 ACK_HOLD1 $end
+$var parameter 2 7 ACK_HOLD2 $end
+$var parameter 2 8 GOT_REQ $end
+$var parameter 2 9 IDLE $end
+$var reg 1 : ack_reg $end
+$var reg 2 ; current_state [1:0] $end
+$var reg 8 < last_byte_reg [7:0] $end
+$var reg 2 = next_state [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 9
+b1 8
+b11 7
+b10 6
+b11 -
+b10 ,
+b1 +
+b0 *
+b100 )
+$end
+#0
+$dumpvars
+bx =
+bx <
+bx ;
+x:
+bx 5
+bx 4
+x3
+bx 2
+x1
+bx 0
+bx /
+bx .
+bx (
+x'
+bx &
+bx %
+x$
+1#
+0"
+x!
+$end
+#5
+0!
+01
+0$
+03
+b1 2
+b0 =
+b0 .
+b0 /
+0'
+0:
+b0 ;
+1"
+#10
+0"
+0#
+#15
+b1 =
+1'
+1:
+b10 2
+1$
+13
+b1 /
+1"
+#20
+0"
+#25
+b11 2
+b10 =
+b10 /
+b1 ;
+1"
+#30
+0"
+#35
+b11 =
+0$
+03
+b10 ;
+b11 /
+1"
+#40
+0"
+#45
+b1 2
+b0 =
+0'
+0:
+b1 .
+b11 ;
+1"
+#50
+0"
+#55
+b1 =
+1'
+1:
+b10 2
+1$
+13
+b0 ;
+b10 .
+b1 /
+1"
+#60
+0"
+#65
+b11 2
+b10 =
+b10 /
+b1 ;
+1"
+#70
+0"
+#75
+b11 =
+0$
+03
+b10 ;
+b11 /
+1"
+#80
+0"
+#85
+b100 2
+b0 =
+0'
+0:
+b11 .
+b11 ;
+1"
+#90
+0"
+#95
+b0 2
+1!
+11
+b0 ;
+b100 /
+1"
+#100
+0"
+#105
+b1 2
+0!
+01
+b0 /
+1"
